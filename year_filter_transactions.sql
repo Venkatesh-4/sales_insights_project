@@ -1,1 +1,0 @@
-SELECT transactions.*, date.year FROM transactions INNER JOIN date ON transactions.order_date = date.date where date.year=2020;
