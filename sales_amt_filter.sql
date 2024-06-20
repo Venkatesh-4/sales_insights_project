@@ -1,0 +1,1 @@
+SELECT SUM(transactions.sales_amount), date.year FROM transactions INNER JOIN date ON transactions.order_date = date.date where date.year=2020 AND transactions.currency="INR\r";
