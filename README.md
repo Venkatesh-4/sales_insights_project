@@ -95,32 +95,32 @@ Some of the queries used were:
    - Added a bar chart to represent the most frequent sales quantities purchased by customers to see the type/size of customers availing the service.
 
 10. Changed Visual Options:
-   - Changed the default visual interaction from cross-highlighting to cross-filtering to avoid highlighting data with zero values after filtering.
+    - Changed the default visual interaction from cross-highlighting to cross-filtering to avoid highlighting data with zero values after filtering.
 
 11. Updated Database, New Measures Added Along with New Report Page:
-   - Updated the database: The transactions table now includes three new columns: profit margin, percentage, and cost_price. Removed norm_sales and the USD filter. Altered the revenue base measure formula.
-   - Added new measures: Profit margin and profit margin percentage. Displayed region-wise profit margin percentage.
+    - Updated the database: The transactions table now includes three new columns: profit margin, percentage, and cost_price. Removed norm_sales and the USD filter. Altered the revenue base measure formula.
+    - Added new measures: Profit margin and profit margin percentage. Displayed region-wise profit margin percentage.
 
 12. New Measure Added and Visualized:
-   - Created a new measure for profit margin contribution percentage to identify individual contributions to the total margin.
+    - Created a new measure for profit margin contribution percentage to identify individual contributions to the total margin.
 
 13. Created New Measure:
-   - Created a measure called Revenue Contribution Percentage and visualized the results.
+    - Created a measure called Revenue Contribution Percentage and visualized the results.
 
 14. Multi-Dimensional Table View:
-   - Generated a Customers table displaying Revenue, Revenue Contribution Percentage, Profit Margin Contribution Percentage, and Profit Margin Percentage.
+    - Generated a Customers table displaying Revenue, Revenue Contribution Percentage, Profit Margin Contribution Percentage, and Profit Margin Percentage.
 
 15. Added Dimension to Revenue Contribution Graph:
-   - Added the customer type dimension to the revenue contribution percentage by region table. Renamed the different pages to better reflect their purpose and intent.
+    - Added the customer type dimension to the revenue contribution percentage by region table. Renamed the different pages to better reflect their purpose and intent.
 
 16. Performance Insights Page Created:
-   - Created a graph with profit margin percentage with respect to region and zone. Developed a measure called Target Difference, which the graph's color function uses to highlight data based on a slider.
+    - Created a graph with profit margin percentage with respect to region and zone. Developed a measure called Target Difference, which the graph's color function uses to highlight data based on a slider.
 
 17. Graph Axis Element Change, Extra Dimension Added:
-   - Moved the zone dimension above the region to better reflect the hierarchy of the drill-down action. Added the customer name dimension to the graph. Created a measure to obtain the previous year's revenue, given the current year as input.
+    - Moved the zone dimension above the region to better reflect the hierarchy of the drill-down action. Added the customer name dimension to the graph. Created a measure to obtain the previous year's revenue, given the current year as input.
 
 18. Chart Title Measure Added:
-   - Added a measure to dynamically change the chart's title based on the drill-down action. When attempting to go to the next hierarchy level (clicking the double arrow key on the chart), nothing changes.
+    - Added a measure to dynamically change the chart's title based on the drill-down action. When attempting to go to the next hierarchy level (clicking the double arrow key on the chart), nothing changes.
 
 19. Revenue Trend Double Bar Chart Added:
-   - Converted the line chart into a line and clustered column chart. Plotted revenue and LY (last year) revenue side by side. Added a profit margin percentage line.
+    - Converted the line chart into a line and clustered column chart. Plotted revenue and LY (last year) revenue side by side. Added a profit margin percentage line.
