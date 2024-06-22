@@ -11,6 +11,17 @@ To learn Power BI using fictitious sales data from a MySQL server. The goal is t
 1. Load data into MySQL and perform some initial analysis of the data (EDA).
 2. Load the data into Power BI to create the dashboard.
 
+## Dashboard Images
+
+1. Key Insights page
+  ![key_insights](https://github.com/Venkatesh-4/sales_insights_project/assets/46065241/30a9ee0c-f027-43a3-914b-5d9b2513ba2d)
+
+3. Profit Analysis page
+  ![profit_analysis](https://github.com/Venkatesh-4/sales_insights_project/assets/46065241/b277e5ea-8c3f-4f27-a183-0979619f414f)
+
+5. Performance Insights page
+  ![perfomance_insights](https://github.com/Venkatesh-4/sales_insights_project/assets/46065241/04a3f9ea-d30e-4a0e-8336-966e8741a89a)
+
 ### MySQL
 
 Some of the queries used were:
@@ -83,5 +94,33 @@ Some of the queries used were:
    - Added bar charts depicting the customer and product type with the highest revenue.
    - Added a bar chart to represent the most frequent sales quantities purchased by customers to see the type/size of customers availing the service.
 
-10. Changed visual options:
-   - Changed the default visual interaction from cross-highlighting to cross-filtering to avoid highlighting data with 0 data post-filtering.
+10. Changed Visual Options:
+   - Changed the default visual interaction from cross-highlighting to cross-filtering to avoid highlighting data with zero values after filtering.
+
+11. Updated Database, New Measures Added Along with New Report Page:
+   - Updated the database: The transactions table now includes three new columns: profit margin, percentage, and cost_price. Removed norm_sales and the USD filter. Altered the revenue base measure formula.
+   - Added new measures: Profit margin and profit margin percentage. Displayed region-wise profit margin percentage.
+
+12. New Measure Added and Visualized:
+   - Created a new measure for profit margin contribution percentage to identify individual contributions to the total margin.
+
+13. Created New Measure:
+   - Created a measure called Revenue Contribution Percentage and visualized the results.
+
+14. Multi-Dimensional Table View:
+   - Generated a Customers table displaying Revenue, Revenue Contribution Percentage, Profit Margin Contribution Percentage, and Profit Margin Percentage.
+
+15. Added Dimension to Revenue Contribution Graph:
+   - Added the customer type dimension to the revenue contribution percentage by region table. Renamed the different pages to better reflect their purpose and intent.
+
+16. Performance Insights Page Created:
+   - Created a graph with profit margin percentage with respect to region and zone. Developed a measure called Target Difference, which the graph's color function uses to highlight data based on a slider.
+
+17. Graph Axis Element Change, Extra Dimension Added:
+   - Moved the zone dimension above the region to better reflect the hierarchy of the drill-down action. Added the customer name dimension to the graph. Created a measure to obtain the previous year's revenue, given the current year as input.
+
+18. Chart Title Measure Added:
+   - Added a measure to dynamically change the chart's title based on the drill-down action. When attempting to go to the next hierarchy level (clicking the double arrow key on the chart), nothing changes.
+
+19. Revenue Trend Double Bar Chart Added:
+   - Converted the line chart into a line and clustered column chart. Plotted revenue and LY (last year) revenue side by side. Added a profit margin percentage line.
